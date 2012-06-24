@@ -13,7 +13,7 @@ namespace WickedSuffering
 
         public Matrix Projection { get; set; }
 
-        public Vector3 Position { get; protected set; }
+        public Vector3 Position { get;  set; }
 
         public Vector3 target { get; protected set; }
 

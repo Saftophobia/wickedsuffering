@@ -11,8 +11,11 @@ namespace WickedSuffering
     class heightmap
     {
         VertexBuffer myVertexBuffer;
+
         IndexBuffer myIndexBuffer;
+
         GraphicsDevice device;
+
         private float[,] heightData;
 
         VertexPositionColorNormal[] vertices;
@@ -32,18 +35,19 @@ namespace WickedSuffering
         int terrainHeight = 3;
 
 
-        public heightmap(GraphicsDevice device, ContentManager content)
+        public heightmap(GraphicsDevice device, ContentManager content, Camera c)
         {
             this.content = content;
             this.device = device;
+            this.c = c;
+
         }
 
         public void loadContent()
         {
             heightMap = content.Load<Texture2D>("HeightMap/heightmap");
             effect = content.Load<Effect>("HeightMap/effects");
-            c = new Camera( new Vector3( 100.0f,100.0f ,100.0f ), Vector3.Zero, device);
-
+          
             LoadHeightData(heightMap);
             SetUpVertices();
             SetUpIndices();
@@ -52,10 +56,7 @@ namespace WickedSuffering
 
         }
 
-        public void Update(GameTime time)
-        {
-            c.Update();
-        }
+        
 
         public void Draw(GameTime time)
         {

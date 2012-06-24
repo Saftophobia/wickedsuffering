@@ -21,6 +21,10 @@ namespace WickedSuffering
 
         heightmap Heightmap;
 
+        playercam playercam;
+
+        Camera c;
+
 
         public Game1()
         {
@@ -36,8 +40,11 @@ namespace WickedSuffering
         /// </summary>
         protected override void Initialize()
         {
-            Heightmap = new heightmap(this.GraphicsDevice,this.Content);
-
+            c = new Camera(new Vector3(100.0f, 100.0f, 100.0f), Vector3.Zero, this.GraphicsDevice);
+            c.View = Matrix.CreateLookAt(new Vector3(250.0f,250.0f,250.0f),Vector3.Zero,Vector3.Up);
+            Heightmap = new heightmap(this.GraphicsDevice,this.Content, c);
+            playercam = new playercam(this.GraphicsDevice,c);
+            
 
             base.Initialize();
         }
@@ -51,7 +58,8 @@ namespace WickedSuffering
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            Heightmap.loadContent();    
+            Heightmap.loadContent();
+            playercam.loadcontent();
 
             // TODO: use this.Content to load your game content here
         }
@@ -77,9 +85,8 @@ namespace WickedSuffering
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            Heightmap.Update(gameTime);
-
-
+            playercam.update(gameTime);
+            
             base.Update(gameTime);
         }
 
