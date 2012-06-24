@@ -1,0 +1,8 @@
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap.xnb
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\effects.xnb
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\WickedSuffering.exe
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\WickedSuffering.pdb
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\obj\x86\Debug\WickedSuffering.exe
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\obj\x86\Debug\WickedSuffering.pdb

@@ -19,6 +19,9 @@ namespace WickedSuffering
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        heightmap Heightmap;
+
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -33,7 +36,8 @@ namespace WickedSuffering
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            Heightmap = new heightmap(this.GraphicsDevice,this.Content);
+
 
             base.Initialize();
         }
@@ -47,8 +51,11 @@ namespace WickedSuffering
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            Heightmap.loadContent();    
+
             // TODO: use this.Content to load your game content here
         }
+        
 
         /// <summary>
         /// UnloadContent will be called once per game and is the place to unload
@@ -70,7 +77,8 @@ namespace WickedSuffering
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
+            Heightmap.Update(gameTime);
+
 
             base.Update(gameTime);
         }
@@ -83,7 +91,7 @@ namespace WickedSuffering
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            Heightmap.Draw(gameTime);
 
             base.Draw(gameTime);
         }
