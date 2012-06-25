@@ -30,9 +30,9 @@ namespace WickedSuffering
 
         ContentManager content;
 
-        int terrainWidth = 4;
+        int terrainWidth;
 
-        int terrainHeight = 3;
+        int terrainHeight;
 
 
         public heightmap(GraphicsDevice device, ContentManager content, Camera c)
@@ -129,13 +129,6 @@ namespace WickedSuffering
                 }
             }
 
-            for (int x = 50; x <= 61; x++)
-            {
-                for (int y = 50; y <= 61; y++)
-                {
-                    vertices[x + y * terrainWidth].Position = new Vector3(x, heightData[x, y] - 20, -y);
-                }
-            }
         }
        
         private void SetUpIndices()
