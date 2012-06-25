@@ -25,6 +25,7 @@ namespace WickedSuffering
 
         Camera c;
 
+        Skydome sky;
 
         public Game1()
         {
@@ -44,7 +45,7 @@ namespace WickedSuffering
             c.View = Matrix.CreateLookAt(new Vector3(250.0f,250.0f,250.0f),Vector3.Zero,Vector3.Up);
             Heightmap = new heightmap(this.GraphicsDevice,this.Content, c);
             playercam = new playercam(this.GraphicsDevice,c);
-            
+            sky = new Skydome(this.GraphicsDevice, this.Content, c.View, c.Projection, c.Position);
 
             base.Initialize();
         }
@@ -60,7 +61,7 @@ namespace WickedSuffering
 
             Heightmap.loadContent();
             playercam.loadcontent();
-
+            sky.LoadContent();
             // TODO: use this.Content to load your game content here
         }
         
@@ -96,9 +97,14 @@ namespace WickedSuffering
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
+            var time = (float)gameTime.TotalGameTime.TotalMilliseconds / 100.0f;
+            sky.GeneratePerlinNoise(time);
+            
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             Heightmap.Draw(gameTime);
+
+            sky.DrawSkyDome(c);
 
             base.Draw(gameTime);
         }
