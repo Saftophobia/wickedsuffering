@@ -18,3 +18,7 @@ C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffe
 C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\dome.xnb
 C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb
 C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\Effects.xnb
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap.xnb
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\Effects.xnb
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\dome.xnb
+D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb

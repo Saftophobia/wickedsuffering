@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
       <Source>HeightMap\heightmap.bmp</Source>
@@ -8,7 +8,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap.xnb</Output>
-      <Time>2012-06-24T02:09:45.3445632+02:00</Time>
+      <Time>2012-07-05T13:16:59.1539065+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SkyDome\cloudMap.jpg</Source>
+      <Name>SkyDome\cloudMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap.xnb</Output>
+      <Time>2012-07-05T13:14:02.152118+02:00</Time>
     </Item>
     <Item>
       <Source>HeightMap\effects.fx</Source>
@@ -17,7 +26,53 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\effects.xnb</Output>
-      <Time>2012-06-24T02:23:25.5084739+02:00</Time>
+      <Time>2012-06-24T03:23:24+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SkyDome\Effects.fx</Source>
+      <Name>SkyDome\Effects</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\Effects.xnb</Output>
+      <Time>2012-07-05T13:14:02.1601185+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SkyDome\dome.x</Source>
+      <Name>SkyDome\dome</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\dome.xnb</Output>
+      <Time>2012-07-05T13:14:02.1561182+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\SkyDome\dome_0.xml</Key>
+        <Value>2012-07-05T13:15:44.3250679+02:00</Value>
+      </Dependency>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>SkyDome\dome.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\SkyDome\dome_0.xml</Output>
+      <Time>2012-07-05T13:14:02.1561182+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SkyDome\cloudMap.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Output>
+      <Time>2012-07-05T13:14:02.152118+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -57,7 +112,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-04-17T10:16:40.9311332+02:00</Value>
+        <Value>2012-07-03T18:28:41.5488801+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
