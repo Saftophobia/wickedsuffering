@@ -57,7 +57,7 @@ namespace WickedSuffering
             skyDome.CopyAbsoluteBoneTransformsTo(modelTransforms);
 
             var wMatrix = Matrix.CreateTranslation(0, -0.3f, 0) *
-                Matrix.CreateScale(1000) * Matrix.CreateTranslation(camera.Position);
+                Matrix.CreateScale(10000) * Matrix.CreateTranslation(camera.Position);
             foreach (ModelMesh mesh in skyDome.Meshes)
             {
                 foreach (Effect currentEffect in mesh.Effects)
