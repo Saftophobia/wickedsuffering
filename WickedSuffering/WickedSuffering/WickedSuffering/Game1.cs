@@ -112,7 +112,7 @@ namespace WickedSuffering
             Heightmap.Draw(gameTime);
 
 
-            //playercam.DrawAK47(gameTime);
+            playercam.DrawAK47(gameTime);
 
 
             spriteBatch.Begin();
