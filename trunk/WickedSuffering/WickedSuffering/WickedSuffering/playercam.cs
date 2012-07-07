@@ -129,7 +129,7 @@ namespace WickedSuffering
             }
 
             // Y coordinates is set to 10 above the heightdata altitude, remove this line to wonder in space again.
-            //c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
+            c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
 
 
 
@@ -151,9 +151,9 @@ namespace WickedSuffering
                 foreach (BasicEffect effect in mesh.Effects)
                 {
                     effect.EnableDefaultLighting();
-                    effect.World = transforms[mesh.ParentBone.Index] *
+                    effect.World = Matrix.CreateScale(0.5f,0.5f,0.5f) * transforms[mesh.ParentBone.Index] *
                         Matrix.CreateRotationX(VerticalRot) * Matrix.CreateRotationY(HorizonRot)
-                        * Matrix.CreateTranslation(c.Position);
+                        * Matrix.CreateTranslation(modelPosition);
                     effect.View = c.View;
                     effect.Projection = c.Projection;
                 }
