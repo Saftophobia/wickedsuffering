@@ -1,7 +1,8 @@
-Content\HeightMap\heightmap.xnb
-Content\SkyDome\cloudMap.xnb
 Content\HeightMap\effects.xnb
 Content\SkyDome\Effects.xnb
 Content\SkyDome\dome.xnb
+Content\SkyDome\cloudMap.xnb
+Content\HeightMap\heightmap.xnb
 Content\SkyDome\cloudMap_0.xnb
 Content\Models\AK.xnb
+Content\SpriteFont1.xnb
