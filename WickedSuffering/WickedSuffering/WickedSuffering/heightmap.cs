@@ -16,7 +16,7 @@ namespace WickedSuffering
 
         GraphicsDevice device;
 
-        private float[,] heightData;
+        public float[,] heightData;
 
         VertexPositionColorNormal[] vertices;
         
@@ -30,9 +30,9 @@ namespace WickedSuffering
 
         ContentManager content;
 
-        int terrainWidth;
+        public int terrainWidth;
 
-        int terrainHeight;
+        public int terrainHeight;
 
 
         public heightmap(GraphicsDevice device, ContentManager content, Camera c)

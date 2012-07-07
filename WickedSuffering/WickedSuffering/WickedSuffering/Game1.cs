@@ -45,8 +45,9 @@ namespace WickedSuffering
             c.View = Matrix.CreateLookAt(new Vector3(250.0f,250.0f,250.0f),Vector3.Zero,Vector3.Up);
             Heightmap = new heightmap(this.GraphicsDevice,this.Content, c);
             playercam = new playercam(this.GraphicsDevice,c);
+            
             sky = new Skydome(this.GraphicsDevice, this.Content, c.View, c.Projection, c.Position);
-
+            
             base.Initialize();
         }
 
@@ -60,7 +61,7 @@ namespace WickedSuffering
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             Heightmap.loadContent();
-            playercam.loadcontent();
+            playercam.loadcontent(Heightmap.heightData,Heightmap.terrainWidth,Heightmap.terrainHeight);
             sky.LoadContent();
             // TODO: use this.Content to load your game content here
         }
