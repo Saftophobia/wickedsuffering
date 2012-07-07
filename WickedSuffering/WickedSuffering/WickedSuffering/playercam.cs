@@ -53,7 +53,7 @@ namespace WickedSuffering
             this.terrainheight = terrainheight;
             this.terrainwidth = terrainlength;
             OrigMouseState = Mouse.GetState();  
-            AK47 = content.Load<Model>("Models/AK");
+            //AK47 = content.Load<Model>("Models/AK");
             
         }
 
@@ -117,11 +117,17 @@ namespace WickedSuffering
         {
             Matrix cameraRotation = Matrix.CreateRotationX(VerticalRot) * Matrix.CreateRotationY(HorizonRot);
             Vector3 rotatedVector = Vector3.Transform(vectorToAdd, cameraRotation);
+            Vector3 pos = c.Position;
+            pos += movspeed * rotatedVector;
+            if (pos.X > -349 && pos.Z > -349 && pos.X < 349 && pos.Z < 349)
+            {
+                c.Position = pos;
+            }
 
-            c.Position += movspeed * rotatedVector;
+                // Y coordinates is set to 10 above the heightdata altitude, remove this line to wonder in space again.
+                c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
 
-           // Y coordinates is set to 10 above the heightdata altitude, remove this line to wonder in space again.
-           c.Position = new Vector3(c.Position.X, heightdata[(terrainheight/ 2) + (int)c.Position.X,(terrainwidth/2) - (int)c.Position.Z] + 10, c.Position.Z);
+
 
 
             UpdateViewMatrix();

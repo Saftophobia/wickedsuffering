@@ -102,14 +102,22 @@ namespace WickedSuffering
         {
             var time = (float)gameTime.TotalGameTime.TotalMilliseconds / 100.0f;
             sky.GeneratePerlinNoise(time);
-            
-            GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            Heightmap.Draw(gameTime);
+            
+
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
             sky.DrawSkyDome(c);
 
-            playercam.DrawAK47(gameTime);
+            Heightmap.Draw(gameTime);
+
+
+            //playercam.DrawAK47(gameTime);
+
+
+            spriteBatch.Begin();
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), c.Position.ToString(), Vector2.Zero, Color.White);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

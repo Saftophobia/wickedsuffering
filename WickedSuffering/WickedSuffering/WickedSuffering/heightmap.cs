@@ -66,7 +66,7 @@ namespace WickedSuffering
         protected void DrawEnvironment(GameTime gameTime)
         {
 
-            device.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, Color.Black, 1.0f, 0);
+            //device.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, Color.Black, 1.0f, 0);
             RasterizerState rs = new RasterizerState();
             rs.CullMode = CullMode.None;
             rs.FillMode = FillMode.Solid;
