@@ -53,7 +53,7 @@ namespace WickedSuffering
             this.terrainheight = terrainheight;
             this.terrainwidth = terrainlength;
             OrigMouseState = Mouse.GetState();  
-            //AK47 = content.Load<Model>("Models/AK");
+            AK47 = content.Load<Model>("Models/AK");
             
         }
 
