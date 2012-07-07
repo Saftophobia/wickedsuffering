@@ -27,6 +27,10 @@ namespace WickedSuffering
 
         Skydome sky;
 
+        int frameRate = 0;
+        int frameCounter = 0;
+        TimeSpan elapsedTime = TimeSpan.Zero;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -90,7 +94,15 @@ namespace WickedSuffering
                 this.Exit();
 
             playercam.update(gameTime);
-            
+            elapsedTime += gameTime.ElapsedGameTime;
+
+            if (elapsedTime > TimeSpan.FromSeconds(1))
+            {
+                elapsedTime -= TimeSpan.FromSeconds(1);
+                frameRate = frameCounter;
+                frameCounter = 0;
+            }
+
             base.Update(gameTime);
         }
 
@@ -114,9 +126,16 @@ namespace WickedSuffering
 
             playercam.DrawAK47(gameTime);
 
+            frameCounter++;
+
+            string fps = string.Format("fps: {0}", frameRate);
+            string pos = "Current Position: " + c.Position.ToString();
 
             spriteBatch.Begin();
-            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), c.Position.ToString(), Vector2.Zero, Color.White);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), pos, new Vector2(3, 3), Color.Black);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), pos, new Vector2(2, 2), Color.White);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), fps, new Vector2(3, 33), Color.Black);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), fps, new Vector2(2, 32), Color.White);
             spriteBatch.End();
 
             base.Draw(gameTime);
