@@ -10,6 +10,10 @@ namespace WickedSuffering
 {
     class playercam
     {
+        public float[,] heightdata; 
+        int terrainwidth;
+        int terrainheight;
+
         GraphicsDevice device;
 
         Camera c;
@@ -28,12 +32,16 @@ namespace WickedSuffering
         {
             this.c = c;
             this.device = device;
+            
         }
 
 
-        public void loadcontent()
+        public void loadcontent(float[,] heightdata, int terrainlength, int terrainheight)
         {
             Mouse.SetPosition(device.Viewport.Width / 2, device.Viewport.Height / 2);
+            this.heightdata = heightdata;
+            this.terrainheight = terrainheight;
+            this.terrainwidth = terrainlength;
             OrigMouseState = Mouse.GetState();  
         }
 
@@ -84,14 +92,26 @@ namespace WickedSuffering
             Vector3 cameraOriginalUpVector = new Vector3(0, 1, 0);
             Vector3 cameraRotatedUpVector = Vector3.Transform(cameraOriginalUpVector, cameraRotation);
 
-           c.View = Matrix.CreateLookAt(c.Position, cameraFinalTarget, cameraRotatedUpVector);
+        
+          c.View = Matrix.CreateLookAt(c.Position, cameraFinalTarget, cameraRotatedUpVector);
         }
 
+
+
+
+
+        
         private void AddToCameraPosition(Vector3 vectorToAdd)
         {
             Matrix cameraRotation = Matrix.CreateRotationX(VerticalRot) * Matrix.CreateRotationY(HorizonRot);
             Vector3 rotatedVector = Vector3.Transform(vectorToAdd, cameraRotation);
+
             c.Position += movspeed * rotatedVector;
+
+           // Y coordinates is set to 10 above the heightdata altitude, remove this line to wonder in space again.
+           c.Position = new Vector3(c.Position.X, heightdata[(terrainheight/ 2) + (int)c.Position.X,(terrainwidth/2) - (int)c.Position.Z] + 10, c.Position.Z);
+
+
             UpdateViewMatrix();
         }
 
