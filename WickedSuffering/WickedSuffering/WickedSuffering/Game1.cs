@@ -44,12 +44,14 @@ namespace WickedSuffering
             c = new Camera(new Vector3(100.0f, 100.0f, 100.0f), Vector3.Zero, this.GraphicsDevice);
             c.View = Matrix.CreateLookAt(new Vector3(250.0f,250.0f,250.0f),Vector3.Zero,Vector3.Up);
             Heightmap = new heightmap(this.GraphicsDevice,this.Content, c);
-            playercam = new playercam(this.GraphicsDevice,c);
+            playercam = new playercam(this.GraphicsDevice,c,this.Content);
             
             sky = new Skydome(this.GraphicsDevice, this.Content, c.View, c.Projection, c.Position);
             
             base.Initialize();
         }
+
+        
 
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
@@ -106,6 +108,8 @@ namespace WickedSuffering
             Heightmap.Draw(gameTime);
 
             sky.DrawSkyDome(c);
+
+            playercam.DrawAK47(gameTime);
 
             base.Draw(gameTime);
         }
