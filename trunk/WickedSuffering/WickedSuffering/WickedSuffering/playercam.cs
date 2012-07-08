@@ -151,9 +151,15 @@ namespace WickedSuffering
                 foreach (BasicEffect effect in mesh.Effects)
                 {
                     effect.EnableDefaultLighting();
-                    effect.World = Matrix.CreateScale(0.5f, 0.5f, 0.5f) * transforms[mesh.ParentBone.Index] *
+                    /*effect.World = Matrix.CreateScale(0.2f, 0.2f, 0.2f) * transforms[mesh.ParentBone.Index] *
+                        Matrix.CreateRotationX(VerticalRot * (float)1.1) * Matrix.CreateRotationY(HorizonRot * (float)1.1)
+                        * Matrix.CreateTranslation(c.Position) * Matrix.CreateTranslation(new Vector3(0,0,10));
+                   */
+
+                    effect.World = Matrix.CreateScale(0.2f, 0.2f, 0.2f) * transforms[mesh.ParentBone.Index] *
                         Matrix.CreateRotationX(VerticalRot) * Matrix.CreateRotationY(HorizonRot)
-                        * Matrix.CreateTranslation(c.Position) * Matrix.CreateTranslation(new Vector3(10,0,0));
+                        * Matrix.CreateTranslation(c.Position);
+                    
                     effect.View = c.View;
                     effect.Projection = c.Projection;
                 }
