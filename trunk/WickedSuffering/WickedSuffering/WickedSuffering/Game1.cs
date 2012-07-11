@@ -70,7 +70,7 @@ namespace WickedSuffering
             Heightmap.loadContent();
             playercam.loadcontent(Heightmap.heightData,Heightmap.terrainWidth,Heightmap.terrainHeight);
             sky.LoadContent();
-            targets.loadContent(Heightmap.terrainWidth, Heightmap.terrainHeight);
+            targets.loadContent(Heightmap.terrainWidth, Heightmap.terrainHeight,Heightmap.heightData);
             
             // TODO: use this.Content to load your game content here
         }
