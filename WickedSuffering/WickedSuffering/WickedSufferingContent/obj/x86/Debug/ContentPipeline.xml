@@ -8,7 +8,7 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\effects.xnb</Output>
-      <Time>2012-06-24T03:23:24+02:00</Time>
+      <Time>2012-07-11T13:52:18.5269344+02:00</Time>
     </Item>
     <Item>
       <Source>SkyDome\Effects.fx</Source>
@@ -29,7 +29,7 @@
       <Time>2012-07-05T13:14:02.1561182+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\SkyDome\dome_0.xml</Key>
-        <Value>2012-07-08T09:14:22.4635737+02:00</Value>
+        <Value>2012-07-08T16:58:13.3748403+02:00</Value>
       </Dependency>
       <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Request>
     </Item>
@@ -67,10 +67,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK.xnb</Output>
-      <Time>2012-07-08T09:14:13.9100845+02:00</Time>
+      <Time>2012-07-08T16:57:44.5445102+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\AK_0.xml</Key>
-        <Value>2012-07-08T09:14:24.2136738+02:00</Value>
+        <Value>2012-07-11T17:38:18.4364102+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -101,7 +101,146 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\AK_0.xml</Output>
-      <Time>2012-07-08T09:14:13.9100845+02:00</Time>
+      <Time>2012-07-08T16:57:44.5445102+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\nanosuit.X</Source>
+      <Name>Models\nanosuit\nanosuit</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb</Output>
+      <Time>2012-07-11T17:45:51.3739377+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Key>
+        <Value>2012-07-11T17:46:28.366364+02:00</Value>
+      </Dependency>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\nanosuit.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Output>
+      <Time>2012-07-11T17:45:51.3739377+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\helmet_dif.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Output>
+      <Time>2012-07-11T17:44:32.7334397+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\glass_dif.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Output>
+      <Time>2012-07-11T17:44:32.7344397+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\glass_di.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Output>
+      <Time>2012-07-11T17:44:32.7344397+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\body_dif.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Output>
+      <Time>2012-07-11T17:44:32.7514407+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\arm_dif.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Output>
+      <Time>2012-07-11T17:44:32.7684417+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\hand_dif.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Output>
+      <Time>2012-07-11T17:44:32.7864427+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\leg_dif.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Output>
+      <Time>2012-07-11T17:44:32.8024436+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -11,7 +11,7 @@ namespace WickedSuffering
 {
     class Targets
     {
-
+        public float[,] heightdata;
         Model target;
         Camera c;
         ContentManager content;
@@ -24,6 +24,7 @@ namespace WickedSuffering
             this.c = c;
             this.content = content;
             positions = new List<Vector3>();
+           
 
         }
 
@@ -34,17 +35,18 @@ namespace WickedSuffering
             {
                 int x = random.Next(-terrainWidth / 2, terrainWidth / 2);
                 int z = random.Next(-terrainHeight / 2, terrainHeight / 2);
-                Vector3 pos = new Vector3(x, 50, z);
+                Vector3 pos = new Vector3(x, heightdata[(terrainHeight / 2) + x, (terrainWidth / 2) - z], z);
                 positions.Add(pos);
             }
         }
 
-        public void loadContent(int width, int height)
+        public void loadContent(int width, int height, float[,] heightdata)
         {
             
-            target = content.Load<Model>("Models/AK");
+            target = content.Load<Model>("Models/nanosuit/nanosuit");
             this.terrainWidth = width;
             this.terrainHeight = height;
+            this.heightdata = heightdata;
             generatePositions();
 
             //effect = content.Load<Effect>("Heightmap/effects");
@@ -73,7 +75,7 @@ namespace WickedSuffering
                             * Matrix.CreateTranslation(c.Position) * Matrix.CreateTranslation(new Vector3(0,0,10));
                        */
 
-                        effect.World = Matrix.CreateScale(0.2f, 0.2f, 0.2f) * transforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(positions[i]);
+                        effect.World = Matrix.CreateScale(0.8f, 0.8f, 0.8f) * transforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(positions[i]);
                         effect.View = c.View;
                         effect.Projection = c.Projection;
                     }
