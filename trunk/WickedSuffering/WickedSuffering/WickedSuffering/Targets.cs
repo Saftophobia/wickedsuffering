@@ -33,8 +33,8 @@ namespace WickedSuffering
 
             for (int i = 0; i < 10; i++)
             {
-                int x = random.Next(-terrainWidth / 2, terrainWidth / 2);
-                int z = random.Next(-terrainHeight / 2, terrainHeight / 2);
+                int x = random.Next((-terrainWidth / 2) + 20, (terrainWidth / 2) -20);
+                int z = random.Next((-terrainHeight / 2) + 20, (terrainHeight / 2) -20);
                 Vector3 pos = new Vector3(x, heightdata[(terrainHeight / 2) + x, (terrainWidth / 2) - z], z);
                 positions.Add(pos);
             }
@@ -70,10 +70,11 @@ namespace WickedSuffering
                     foreach (BasicEffect effect in mesh.Effects)
                     {
                         effect.EnableDefaultLighting();
-                        /*effect.World = Matrix.CreateScale(0.2f, 0.2f, 0.2f) * transforms[mesh.ParentBone.Index] *
-                            Matrix.CreateRotationX(VerticalRot * (float)1.1) * Matrix.CreateRotationY(HorizonRot * (float)1.1)
-                            * Matrix.CreateTranslation(c.Position) * Matrix.CreateTranslation(new Vector3(0,0,10));
-                       */
+                        effect.PreferPerPixelLighting = true;
+                        effect.LightingEnabled = true;
+                      
+
+
 
                         effect.World = Matrix.CreateScale(0.8f, 0.8f, 0.8f) * transforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(positions[i]);
                         effect.View = c.View;
