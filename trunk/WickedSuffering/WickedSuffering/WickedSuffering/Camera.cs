@@ -15,7 +15,7 @@ namespace WickedSuffering
 
         public Vector3 Position { get;  set; }
 
-        public Vector3 target { get; protected set; }
+        public Vector3 target { get;  set; }
 
         public Camera(Vector3 Position, Vector3 target, GraphicsDevice graphicsDevice)
         {

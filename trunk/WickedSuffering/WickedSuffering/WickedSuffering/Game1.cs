@@ -41,7 +41,7 @@ namespace WickedSuffering
 
         protected override void Initialize()
         {
-            c = new Camera(new Vector3(100.0f, 100.0f, 100.0f), Vector3.Zero, this.GraphicsDevice);
+            c = new Camera(new Vector3(0, 100, 0), Vector3.Zero, this.GraphicsDevice);
             c.View = Matrix.CreateLookAt(new Vector3(250.0f,250.0f,250.0f),Vector3.Zero,Vector3.Up);
             Heightmap = new heightmap(this.GraphicsDevice,this.Content, c);
             playercam = new playercam(this.GraphicsDevice,c,this.Content);
@@ -118,12 +118,21 @@ namespace WickedSuffering
 
             string fps = string.Format("fps: {0}", frameRate);
             string pos = "Current Position: " + c.Position.ToString();
-
+            string targ = "Current target: " + c.target.ToString();
+            string diff = "diff: " + (c.target - c.Position).ToString();
+             
             spriteBatch.Begin();
             spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), pos, new Vector2(3, 3), Color.Black);
             spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), pos, new Vector2(2, 2), Color.White);
-            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), fps, new Vector2(3, 33), Color.Black);
-            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), fps, new Vector2(2, 32), Color.White);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), fps, new Vector2(3, 63), Color.Black);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), fps, new Vector2(2, 62), Color.White);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), targ, new Vector2(3, 33), Color.Black);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), targ, new Vector2(2, 32), Color.White);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), diff, new Vector2(3, 93), Color.Black);
+            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), diff, new Vector2(2, 92), Color.White);
+
+
+
             spriteBatch.End();
 
             base.Draw(gameTime);
