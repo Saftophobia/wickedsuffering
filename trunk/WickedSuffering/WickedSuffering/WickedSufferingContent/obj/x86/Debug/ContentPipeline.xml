@@ -110,10 +110,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb</Output>
-      <Time>2012-07-11T17:45:51.3739377+02:00</Time>
+      <Time>2012-07-12T13:38:12.938228+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Key>
-        <Value>2012-07-11T17:46:28.366364+02:00</Value>
+        <Value>2012-07-14T13:05:01.7803411+02:00</Value>
       </Dependency>
       <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Request>
       <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Request>
@@ -128,7 +128,7 @@
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Output>
-      <Time>2012-07-11T17:45:51.3739377+02:00</Time>
+      <Time>2012-07-12T13:38:12.938228+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\helmet_dif.bmp</Source>
@@ -144,7 +144,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Output>
-      <Time>2012-07-11T17:44:32.7334397+02:00</Time>
+      <Time>2012-07-12T12:50:26.15148+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\glass_dif.bmp</Source>
@@ -160,7 +160,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Output>
-      <Time>2012-07-11T17:44:32.7344397+02:00</Time>
+      <Time>2012-07-12T12:50:26.1524801+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\glass_di.bmp</Source>
@@ -176,7 +176,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Output>
-      <Time>2012-07-11T17:44:32.7344397+02:00</Time>
+      <Time>2012-07-12T13:38:12.9232272+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\body_dif.bmp</Source>
@@ -192,7 +192,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Output>
-      <Time>2012-07-11T17:44:32.7514407+02:00</Time>
+      <Time>2012-07-12T12:50:26.1724812+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\arm_dif.bmp</Source>
@@ -208,7 +208,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Output>
-      <Time>2012-07-11T17:44:32.7684417+02:00</Time>
+      <Time>2012-07-12T12:50:26.3214897+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\hand_dif.bmp</Source>
@@ -224,7 +224,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Output>
-      <Time>2012-07-11T17:44:32.7864427+02:00</Time>
+      <Time>2012-07-12T12:50:26.3564917+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\leg_dif.bmp</Source>
@@ -240,7 +240,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Output>
-      <Time>2012-07-11T17:44:32.8024436+02:00</Time>
+      <Time>2012-07-12T12:50:26.3744928+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

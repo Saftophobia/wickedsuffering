@@ -36,6 +36,7 @@ namespace WickedSuffering
         float HorizonRot = MathHelper.PiOver2;
 
         float VerticalRot = -MathHelper.Pi / 10.0f;
+        List<target> targets;
 
         //Effect effect;
 
@@ -43,12 +44,13 @@ namespace WickedSuffering
         {
             this.c = c;
             this.device = device;
+            
             this.content = content;
 
         }
 
 
-        public void loadcontent(float[,] heightdata, int terrainlength, int terrainheight)
+        public void loadcontent(float[,] heightdata, int terrainlength, int terrainheight, List<target> targets)
         {
             Mouse.SetPosition(device.Viewport.Width / 2, device.Viewport.Height / 2);
             this.heightdata = heightdata;
@@ -56,6 +58,7 @@ namespace WickedSuffering
             this.terrainwidth = terrainlength;
             OrigMouseState = Mouse.GetState();
             AK47 = content.Load<Model>("Models/AK");
+            this.targets = targets;
             //effect = content.Load<Effect>("Heightmap/effects");
             //AK47.Meshes[0].MeshParts[0].Effect = effect;
 
@@ -94,7 +97,8 @@ namespace WickedSuffering
                 moveVector += new Vector3(0, 2, 0);
             if (keyState.IsKeyDown(Keys.Z))
                 moveVector += new Vector3(0, -2, 0);
-
+            if (keyState.IsKeyDown(Keys.Z))
+                Shoot();
             AddToCameraPosition(moveVector * timeDifference);
         }
 
@@ -129,7 +133,7 @@ namespace WickedSuffering
             }
 
             // Y coordinates is set to 10 above the heightdata altitude, remove this line to wonder in space again.
-            c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
+       //     c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
 
 
 
@@ -151,10 +155,7 @@ namespace WickedSuffering
                 foreach (BasicEffect effect in mesh.Effects)
                 {
                     effect.EnableDefaultLighting();
-                    /*effect.World = Matrix.CreateScale(0.2f, 0.2f, 0.2f) * transforms[mesh.ParentBone.Index] *
-                        Matrix.CreateRotationX(VerticalRot * (float)1.1) * Matrix.CreateRotationY(HorizonRot * (float)1.1)
-                        * Matrix.CreateTranslation(c.Position) * Matrix.CreateTranslation(new Vector3(0,0,10));
-                   */
+                    
 
                     effect.World = Matrix.CreateScale(0.2f, 0.2f, 0.2f) * transforms[mesh.ParentBone.Index] *
                         Matrix.CreateRotationX(VerticalRot) * Matrix.CreateRotationY(HorizonRot)
@@ -166,37 +167,16 @@ namespace WickedSuffering
 
                 mesh.Draw();
 
-                /*
-                Matrix worldMatrix = Matrix.CreateScale(0.0005f, 0.0005f, 0.0005f) * Matrix.CreateRotationY(modelRotation) * Matrix.CreateTranslation(modelPosition);
-                Matrix[] Transforms = new Matrix[AK47.Bones.Count];
-                AK47.CopyAbsoluteBoneTransformsTo(Transforms);
-            
-                foreach (ModelMesh mesh in AK47.Meshes)
-                {
-                    foreach (Effect currentEffect in mesh.Effects)
-                    {
-                        currentEffect.CurrentTechnique = currentEffect.Techniques["ColoredNoShading"];
-                        currentEffect.Parameters["xWorld"].SetValue(Transforms[mesh.ParentBone.Index] * worldMatrix);
-                        currentEffect.Parameters["xView"].SetValue(c.View);
-                        currentEffect.Parameters["xProjection"].SetValue(c.Projection);
-
-                        /*currentEffect.Parameters["xEnableLighting"].SetValue(true);
-                        Vector3 lightDirection = new Vector3(1.0f, -1.0f, -1.0f);
-                        lightDirection.Normalize();
-                        currentEffect.Parameters["xLightDirection"].SetValue(lightDirection);
-                        currentEffect.Parameters["xAmbient"].SetValue(0.5f);
-
-
-                    }
-
-                    mesh.Draw();
-                }
-
-                */
+                
 
             }
 
         }
 
+        public void Shoot()
+        {
+
+
+        }
     }
 }
