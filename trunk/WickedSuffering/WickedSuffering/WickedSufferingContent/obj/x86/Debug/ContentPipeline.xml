@@ -242,6 +242,15 @@
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Output>
       <Time>2012-07-12T12:50:26.3744928+02:00</Time>
     </Item>
+    <Item>
+      <Source>crosshair.png</Source>
+      <Name>crosshair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb</Output>
+      <Time>2012-07-14T17:33:12.6056297+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
