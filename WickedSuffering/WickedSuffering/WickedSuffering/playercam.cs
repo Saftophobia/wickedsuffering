@@ -6,11 +6,13 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Audio;
 
 namespace WickedSuffering
 {
     class playercam
     {
+        SoundEffect soundeffect;
         Model AK47;
         float modelRotation = 0.0f;
         Vector3 modelPosition = new Vector3(0,100,0);
@@ -57,8 +59,10 @@ namespace WickedSuffering
             this.terrainheight = terrainheight;
             this.terrainwidth = terrainlength;
             OrigMouseState = Mouse.GetState();
-            AK47 = content.Load<Model>("Models/AK");
+            AK47 = content.Load<Model>("Models/AK/AK");
             this.targets = targets;
+            soundeffect = content.Load<SoundEffect>("Models/AK/GunAK47SingleShot");
+            
             //effect = content.Load<Effect>("Heightmap/effects");
             //AK47.Meshes[0].MeshParts[0].Effect = effect;
 
@@ -178,6 +182,13 @@ namespace WickedSuffering
 
         public void Shoot()
         {
+            SoundEffectInstance soundEffectInstance = soundeffect.CreateInstance();
+
+            soundEffectInstance.IsLooped = false;
+            
+
+            soundEffectInstance.Play();
+
             Vector3 pointS = c.Position;
             Vector3 dirV = c.Position - c.target;
 
