@@ -29,9 +29,29 @@
       <Time>2012-07-05T13:14:02.1561182+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\SkyDome\dome_0.xml</Key>
-        <Value>2012-07-08T16:58:13.3748403+02:00</Value>
+        <Value>2012-07-14T18:49:43.285149+02:00</Value>
       </Dependency>
       <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\nanosuit\nanosuit.X</Source>
+      <Name>Models\nanosuit\nanosuit</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb</Output>
+      <Time>2012-07-12T13:38:12.938228+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Key>
+        <Value>2012-07-14T18:49:44.408351+02:00</Value>
+      </Dependency>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Request>
     </Item>
     <Item>
       <Source>SkyDome\cloudMap.jpg</Source>
@@ -52,6 +72,15 @@
       <Time>2012-07-05T13:16:59.1539065+02:00</Time>
     </Item>
     <Item>
+      <Source>crosshair.png</Source>
+      <Name>crosshair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb</Output>
+      <Time>2012-07-14T17:33:12.6056297+02:00</Time>
+    </Item>
+    <Item>
       <Source>SpriteFont1.spritefont</Source>
       <Name>SpriteFont1</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -61,17 +90,26 @@
       <Time>2012-07-07T21:05:28.7779035+02:00</Time>
     </Item>
     <Item>
-      <Source>Models\AK.FBX</Source>
-      <Name>Models\AK</Name>
+      <Source>Models\AK\AK.FBX</Source>
+      <Name>Models\AK\AK</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK.xnb</Output>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\AK.xnb</Output>
       <Time>2012-07-08T16:57:44.5445102+02:00</Time>
       <Dependency>
-        <Key>obj\x86\Debug\Models\AK_0.xml</Key>
-        <Value>2012-07-11T17:38:18.4364102+02:00</Value>
+        <Key>obj\x86\Debug\Models\AK\AK_0.xml</Key>
+        <Value>2012-07-14T18:49:48.0899574+02:00</Value>
       </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\AK\GunAK47SingleShot.wav</Source>
+      <Name>Models\AK\GunAK47SingleShot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\GunAK47SingleShot.xnb</Output>
+      <Time>2012-07-14T18:30:06.1683367+02:00</Time>
     </Item>
     <Item>
       <Source>SkyDome\dome.x</Source>
@@ -95,33 +133,6 @@
       <Options>None</Options>
       <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Output>
       <Time>2012-07-05T13:14:02.152118+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Models\AK.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\Models\AK_0.xml</Output>
-      <Time>2012-07-08T16:57:44.5445102+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Models\nanosuit\nanosuit.X</Source>
-      <Name>Models\nanosuit\nanosuit</Name>
-      <Importer>XImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb</Output>
-      <Time>2012-07-12T13:38:12.938228+02:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Key>
-        <Value>2012-07-14T13:05:01.7803411+02:00</Value>
-      </Dependency>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Request>
     </Item>
     <Item>
       <Source>Models\nanosuit\nanosuit.X</Source>
@@ -243,13 +254,11 @@
       <Time>2012-07-12T12:50:26.3744928+02:00</Time>
     </Item>
     <Item>
-      <Source>crosshair.png</Source>
-      <Name>crosshair</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb</Output>
-      <Time>2012-07-14T17:33:12.6056297+02:00</Time>
+      <Source>Models\AK\AK.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\AK\AK_0.xml</Output>
+      <Time>2012-07-08T16:57:44.5445102+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

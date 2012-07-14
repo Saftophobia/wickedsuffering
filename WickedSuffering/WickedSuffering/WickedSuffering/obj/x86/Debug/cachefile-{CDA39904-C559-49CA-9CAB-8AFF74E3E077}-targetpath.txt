@@ -1,12 +1,14 @@
 Content\HeightMap\effects.xnb
 Content\SkyDome\Effects.xnb
 Content\SkyDome\dome.xnb
+Content\Models\nanosuit\nanosuit.xnb
 Content\SkyDome\cloudMap.xnb
 Content\HeightMap\heightmap.xnb
+Content\crosshair.xnb
 Content\SpriteFont1.xnb
-Content\Models\AK.xnb
+Content\Models\AK\AK.xnb
+Content\Models\AK\GunAK47SingleShot.xnb
 Content\SkyDome\cloudMap_0.xnb
-Content\Models\nanosuit\nanosuit.xnb
 Content\Models\nanosuit\helmet_dif_0.xnb
 Content\Models\nanosuit\glass_dif_0.xnb
 Content\Models\nanosuit\glass_di_0.xnb
