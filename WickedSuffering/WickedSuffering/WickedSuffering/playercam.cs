@@ -69,6 +69,10 @@ namespace WickedSuffering
             float timeDifference = (float)gameTime.ElapsedGameTime.TotalMilliseconds / 1000.0f;
             MouseState mousestate = Mouse.GetState();
 
+            if (mousestate.LeftButton ==  ButtonState.Pressed)
+            {
+                Shoot();
+            }
             if (mousestate != OrigMouseState)
             {
                 float xDifference = mousestate.X - OrigMouseState.X;
@@ -97,8 +101,7 @@ namespace WickedSuffering
                 moveVector += new Vector3(0, 2, 0);
             if (keyState.IsKeyDown(Keys.Z))
                 moveVector += new Vector3(0, -2, 0);
-            if (keyState.IsKeyDown(Keys.Z))
-                Shoot();
+            
             AddToCameraPosition(moveVector * timeDifference);
         }
 
@@ -108,12 +111,12 @@ namespace WickedSuffering
 
             Vector3 cameraOriginalTarget = new Vector3(0, 0, -1);
             Vector3 cameraRotatedTarget = Vector3.Transform(cameraOriginalTarget, cameraRotation);
-            Vector3 cameraFinalTarget = c.Position + cameraRotatedTarget;
+            c.target = c.Position + cameraRotatedTarget;
             Vector3 cameraOriginalUpVector = new Vector3(0, 1, 0);
             Vector3 cameraRotatedUpVector = Vector3.Transform(cameraOriginalUpVector, cameraRotation);
 
 
-            c.View = Matrix.CreateLookAt(c.Position, cameraFinalTarget, cameraRotatedUpVector);
+            c.View = Matrix.CreateLookAt(c.Position, c.target, cameraRotatedUpVector);
         }
 
 
@@ -133,7 +136,7 @@ namespace WickedSuffering
             }
 
             // Y coordinates is set to 10 above the heightdata altitude, remove this line to wonder in space again.
-       //     c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
+           c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
 
 
 
@@ -175,8 +178,28 @@ namespace WickedSuffering
 
         public void Shoot()
         {
+            Vector3 pointS = c.Position;
+            Vector3 dirV = c.Position - c.target;
+
+            for (int i = 0; i < targets.Count(); i++)
+            {
+
+                Vector3 pointQ = targets[i].position;
+                
+                float F = ((pointQ - pointS).Length()) * ((pointQ - pointS).Length());
+                float R = (Vector3.Dot((pointQ - pointS),dirV)) * (Vector3.Dot((pointQ - pointS),dirV));
+                float M = dirV.Length() * dirV.Length();
+
+                float Distance = (F - (R / M)) * (F - (R / M));
+
+                if (Distance < 10)
+                {
+                    targets[i].alive = false;
+                }
+                
 
 
+            }
         }
     }
 }

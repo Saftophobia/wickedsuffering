@@ -19,9 +19,9 @@ namespace WickedSuffering
         ContentManager content;
 
 
-        Vector3 position;
+        public Vector3 position;
 
-        bool alive;
+        public bool alive;
 
         public target(Camera c,ContentManager content, string ID,Vector3 position)
         {
