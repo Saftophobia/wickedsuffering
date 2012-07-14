@@ -23,6 +23,8 @@ namespace WickedSuffering
 
         playercam playercam;
 
+        Texture2D crossHair;
+
         Camera c;
 
         Skydome sky;
@@ -47,6 +49,7 @@ namespace WickedSuffering
             playercam = new playercam(this.GraphicsDevice,c,this.Content);
             TargetEngine = new TargetEngine(c, this.Content);
             sky = new Skydome(this.GraphicsDevice, this.Content, c.View, c.Projection, c.Position);
+            crossHair = Content.Load<Texture2D>("crosshair");
             
             base.Initialize();
         }
@@ -118,19 +121,13 @@ namespace WickedSuffering
 
             string fps = string.Format("fps: {0}", frameRate);
             string pos = "Current Position: " + c.Position.ToString();
-            string targ = "Current target: " + c.target.ToString();
-            string diff = "diff: " + (c.target - c.Position).ToString();
-             
+            
             spriteBatch.Begin();
             spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), pos, new Vector2(3, 3), Color.Black);
             spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), pos, new Vector2(2, 2), Color.White);
             spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), fps, new Vector2(3, 63), Color.Black);
             spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), fps, new Vector2(2, 62), Color.White);
-            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), targ, new Vector2(3, 33), Color.Black);
-            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), targ, new Vector2(2, 32), Color.White);
-            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), diff, new Vector2(3, 93), Color.Black);
-            spriteBatch.DrawString(Content.Load<SpriteFont>("SpriteFont1"), diff, new Vector2(2, 92), Color.White);
-
+            spriteBatch.Draw(crossHair, new Vector2((GraphicsDevice.Viewport.Width / 2) - (crossHair.Width / 2), (GraphicsDevice.Viewport.Height / 2) - (crossHair.Height / 2)), Color.White);
 
 
             spriteBatch.End();
