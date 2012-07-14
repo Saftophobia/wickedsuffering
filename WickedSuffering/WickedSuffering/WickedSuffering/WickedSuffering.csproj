@@ -114,7 +114,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Skydome.cs" />
-    <Compile Include="Targets.cs" />
+    <Compile Include="target.cs" />
+    <Compile Include="TargetEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
