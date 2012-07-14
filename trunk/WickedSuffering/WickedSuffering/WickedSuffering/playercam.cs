@@ -184,7 +184,7 @@ namespace WickedSuffering
             for (int i = 0; i < targets.Count(); i++)
             {
 
-                Vector3 pointQ = targets[i].position;
+                Vector3 pointQ = new Vector3(targets[i].position.X,targets[i].position.Y + 10,targets[i].position.Z);
                 
                 float F = ((pointQ - pointS).Length()) * ((pointQ - pointS).Length());
                 float R = (Vector3.Dot((pointQ - pointS),dirV)) * (Vector3.Dot((pointQ - pointS),dirV));
