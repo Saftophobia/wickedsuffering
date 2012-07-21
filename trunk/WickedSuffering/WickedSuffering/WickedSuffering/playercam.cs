@@ -76,6 +76,7 @@ namespace WickedSuffering
             if (mousestate.LeftButton ==  ButtonState.Pressed)
             {
                 Shoot();
+                VerticalRot += 0.5f * timeDifference;
             }
             if (mousestate != OrigMouseState)
             {
