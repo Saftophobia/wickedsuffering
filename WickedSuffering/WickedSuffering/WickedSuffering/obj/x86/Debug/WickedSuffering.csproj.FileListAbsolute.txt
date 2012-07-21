@@ -24,7 +24,6 @@ D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb
 C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SpriteFont1.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SpriteFont1.xnb
-C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb
@@ -36,3 +35,14 @@ D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\AK.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\GunAK47SingleShot.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\AK.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\GunAK47SingleShot.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb

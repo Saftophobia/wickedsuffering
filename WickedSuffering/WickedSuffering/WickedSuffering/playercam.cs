@@ -140,9 +140,30 @@ namespace WickedSuffering
                 c.Position = pos;
             }
 
-            // Y coordinates is set to 10 above the heightdata altitude, remove this line to wonder in space again.
-           c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
-
+             KeyboardState keyState = Keyboard.GetState();
+            // Y coordinates is set to 10 above the heightdata altitude, remove this line to wander in space again.
+             if (keyState.IsKeyDown(Keys.LeftControl) || keyState.IsKeyDown(Keys.LeftShift))
+             {
+                 if (c.Position.Y > heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 12)
+                 {
+                     c.Position = new Vector3(c.Position.X, c.Position.Y - 1, c.Position.Z);
+                 }
+                 else
+                 {
+                     c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
+                 }
+             }
+             else
+             {
+                 if (c.Position.Y < heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 18)
+                 {
+                     c.Position = new Vector3(c.Position.X, c.Position.Y + 1, c.Position.Z);
+                 }
+                 else
+                 {
+                     c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 20, c.Position.Z);
+                 }
+             }
 
 
 
