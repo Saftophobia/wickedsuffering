@@ -47,3 +47,4 @@ C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffe
 C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb
 C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb
+C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb

@@ -40,7 +40,19 @@ namespace WickedSuffering
         float VerticalRot = -MathHelper.Pi / 10.0f;
         List<target> targets;
 
+        bool crouch = false;
+
+        bool jump = false;
+
+        bool jumping = false;
+
+        bool up = true;
+
+        float down = 0.1f;
         //Effect effect;
+
+
+
 
         public playercam(GraphicsDevice device, Camera c, ContentManager content)
         {
@@ -135,22 +147,27 @@ namespace WickedSuffering
             Vector3 rotatedVector = Vector3.Transform(vectorToAdd, cameraRotation);
             Vector3 pos = c.Position;
             pos += movspeed * rotatedVector;
+            
             if (pos.X > -349 && pos.Z > -349 && pos.X < 349 && pos.Z < 349)
             {
                 c.Position = pos;
             }
 
              KeyboardState keyState = Keyboard.GetState();
-            // Y coordinates is set to 10 above the heightdata altitude, remove this line to wander in space again.
+            
              if (keyState.IsKeyDown(Keys.LeftControl) || keyState.IsKeyDown(Keys.LeftShift))
              {
-                 if (c.Position.Y > heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 12)
+                 if (!jump)
                  {
-                     c.Position = new Vector3(c.Position.X, c.Position.Y - 1, c.Position.Z);
-                 }
-                 else
-                 {
-                     c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
+                     crouch = true;
+                     if (c.Position.Y > heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 12)
+                     {
+                         c.Position = new Vector3(c.Position.X, c.Position.Y - 1, c.Position.Z);
+                     }
+                     else
+                     {
+                         c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
+                     }
                  }
              }
              else
@@ -161,11 +178,46 @@ namespace WickedSuffering
                  }
                  else
                  {
-                     c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 20, c.Position.Z);
+                     crouch = false;
+
                  }
              }
 
+             if (keyState.IsKeyDown(Keys.Space))
+             { jumping = true; }
 
+                 if (!crouch && jumping)
+                 {
+                     jump = true;
+                     if ((c.Position.Y < heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 40) && up)
+                     {
+                         c.Position = new Vector3(c.Position.X, c.Position.Y + 1, c.Position.Z);
+                     }
+                     else
+                     {
+                         if (c.Position.Y > heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 20)
+                         {
+                             up = false;
+                             c.Position = new Vector3(c.Position.X, c.Position.Y - down, c.Position.Z);
+                             down += 0.1f;
+                         }
+
+                         else
+                         {
+                             jump = false;
+                             jumping = false;
+                             up = true;
+                             down = 0.2f;
+                         }
+                     }
+                 }
+             
+
+             if (!crouch && !jump)
+             {
+                 // Y coordinates is set to 20 above the heightdata altitude, remove this line to wander in space again.
+                 c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 20, c.Position.Z);
+             }
 
             UpdateViewMatrix();
         }
