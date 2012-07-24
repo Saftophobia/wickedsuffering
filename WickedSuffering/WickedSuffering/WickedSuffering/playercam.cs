@@ -183,7 +183,7 @@ namespace WickedSuffering
                  }
              }
 
-             if (keyState.IsKeyDown(Keys.Space))
+             if (keyState.IsKeyDown(Keys.Space) && !crouch)
              { jumping = true; }
 
                  if (!crouch && jumping)
