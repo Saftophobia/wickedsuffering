@@ -7,8 +7,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\effects.xnb</Output>
-      <Time>2012-07-07T20:55:05.2017856+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\effects.xnb</Output>
+      <Time>2012-07-11T13:52:18.5269344+02:00</Time>
     </Item>
     <Item>
       <Source>SkyDome\Effects.fx</Source>
@@ -16,8 +16,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\Effects.xnb</Output>
-      <Time>2012-07-11T00:31:04.8217242+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\Effects.xnb</Output>
+      <Time>2012-07-05T13:14:02.1601185+02:00</Time>
     </Item>
     <Item>
       <Source>SkyDome\dome.x</Source>
@@ -25,13 +25,13 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\dome.xnb</Output>
-      <Time>2012-07-07T19:03:10.2987151+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\dome.xnb</Output>
+      <Time>2012-07-05T13:14:02.1561182+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\SkyDome\dome_0.xml</Key>
-        <Value>2012-07-22T01:15:05.1962095+02:00</Value>
+        <Value>2012-07-24T14:44:42.8420194+02:00</Value>
       </Dependency>
-      <Request>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Request>
     </Item>
     <Item>
       <Source>Models\nanosuit\nanosuit.X</Source>
@@ -39,19 +39,19 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb</Output>
-      <Time>2012-07-11T20:22:29.1016225+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb</Output>
+      <Time>2012-07-12T13:38:12.938228+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Key>
-        <Value>2012-07-22T01:15:06.2522699+02:00</Value>
+        <Value>2012-07-24T14:44:43.9390821+02:00</Value>
       </Dependency>
-      <Request>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Request>
-      <Request>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Request>
-      <Request>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Request>
-      <Request>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Request>
-      <Request>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Request>
-      <Request>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Request>
-      <Request>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Request>
     </Item>
     <Item>
       <Source>SkyDome\cloudMap.jpg</Source>
@@ -59,8 +59,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap.xnb</Output>
-      <Time>2012-07-07T19:03:10.2787139+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap.xnb</Output>
+      <Time>2012-07-05T13:14:02.152118+02:00</Time>
     </Item>
     <Item>
       <Source>HeightMap\heightmap.bmp</Source>
@@ -68,8 +68,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap.xnb</Output>
-      <Time>2012-07-07T19:03:07.9845827+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap.xnb</Output>
+      <Time>2012-07-05T13:16:59.1539065+02:00</Time>
     </Item>
     <Item>
       <Source>crosshair.png</Source>
@@ -77,8 +77,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb</Output>
-      <Time>2012-07-15T23:48:36.7051168+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb</Output>
+      <Time>2012-07-14T17:33:12.6056297+02:00</Time>
+    </Item>
+    <Item>
+      <Source>HeightMap\sand-texture.jpg</Source>
+      <Name>HeightMap\sand-texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb</Output>
+      <Time>2012-07-24T14:43:50.0900021+02:00</Time>
     </Item>
     <Item>
       <Source>SpriteFont1.spritefont</Source>
@@ -86,8 +95,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
-      <Time>2012-07-07T19:37:47.3055131+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2012-07-07T21:05:28.7779035+02:00</Time>
     </Item>
     <Item>
       <Source>Models\AK\AK.FBX</Source>
@@ -95,11 +104,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\AK.xnb</Output>
-      <Time>2012-07-15T23:50:53.9749681+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\AK.xnb</Output>
+      <Time>2012-07-08T16:57:44.5445102+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\AK\AK_0.xml</Key>
-        <Value>2012-07-22T01:15:09.9414809+02:00</Value>
+        <Value>2012-07-24T14:44:49.9904282+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -108,15 +117,15 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\GunAK47SingleShot.xnb</Output>
-      <Time>2012-07-15T23:50:53.9909691+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\GunAK47SingleShot.xnb</Output>
+      <Time>2012-07-14T18:30:06.1683367+02:00</Time>
     </Item>
     <Item>
       <Source>SkyDome\dome.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\SkyDome\dome_0.xml</Output>
-      <Time>2012-07-07T19:03:10.2987151+02:00</Time>
+      <Time>2012-07-05T13:14:02.1561182+02:00</Time>
     </Item>
     <Item>
       <Source>SkyDome\cloudMap.jpg</Source>
@@ -131,15 +140,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Output>
-      <Time>2012-07-07T19:03:10.2787139+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Output>
+      <Time>2012-07-05T13:14:02.152118+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\nanosuit.X</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Output>
-      <Time>2012-07-11T20:22:29.1016225+02:00</Time>
+      <Time>2012-07-12T13:38:12.938228+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\helmet_dif.bmp</Source>
@@ -154,8 +163,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Output>
-      <Time>2012-07-11T20:22:29.1666262+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Output>
+      <Time>2012-07-12T12:50:26.15148+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\glass_dif.bmp</Source>
@@ -170,8 +179,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Output>
-      <Time>2012-07-11T20:22:29.1176234+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Output>
+      <Time>2012-07-12T12:50:26.1524801+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\glass_di.bmp</Source>
@@ -186,8 +195,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Output>
-      <Time>2012-07-11T20:22:29.0616202+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Output>
+      <Time>2012-07-12T13:38:12.9232272+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\body_dif.bmp</Source>
@@ -202,8 +211,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Output>
-      <Time>2012-07-11T20:22:29.1476251+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Output>
+      <Time>2012-07-12T12:50:26.1724812+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\arm_dif.bmp</Source>
@@ -218,8 +227,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Output>
-      <Time>2012-07-11T20:22:29.180627+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Output>
+      <Time>2012-07-12T12:50:26.3214897+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\hand_dif.bmp</Source>
@@ -234,8 +243,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Output>
-      <Time>2012-07-11T20:22:29.1326242+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Output>
+      <Time>2012-07-12T12:50:26.3564917+02:00</Time>
     </Item>
     <Item>
       <Source>Models\nanosuit\leg_dif.bmp</Source>
@@ -250,15 +259,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Output>
-      <Time>2012-07-11T20:22:29.0786211+02:00</Time>
+      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Output>
+      <Time>2012-07-12T12:50:26.3744928+02:00</Time>
     </Item>
     <Item>
       <Source>Models\AK\AK.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\AK\AK_0.xml</Output>
-      <Time>2012-07-15T23:50:53.9749681+02:00</Time>
+      <Time>2012-07-08T16:57:44.5445102+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -266,39 +275,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSufferingContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSufferingContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSufferingContent\</RootDirectory>
+      <LoggerRootDirectory>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSufferingContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+03:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+03:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+03:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+03:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+03:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+03:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-03-19T19:06:03.9560235+02:00</Value>
+        <Value>2012-07-03T18:28:41.5488801+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
