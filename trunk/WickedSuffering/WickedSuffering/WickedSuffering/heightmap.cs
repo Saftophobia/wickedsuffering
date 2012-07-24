@@ -10,6 +10,8 @@ namespace WickedSuffering
 {
     class heightmap
     {
+        Texture2D sandTexture;
+
         VertexBuffer myVertexBuffer;
 
         IndexBuffer myIndexBuffer;
@@ -18,7 +20,7 @@ namespace WickedSuffering
 
         public float[,] heightData;
 
-        VertexPositionColorNormal[] vertices;
+        VertexPositionNormalTexture[] vertices;
         
         int[] indices;
         
@@ -47,7 +49,7 @@ namespace WickedSuffering
         {
             heightMap = content.Load<Texture2D>("HeightMap/heightmap");
             effect = content.Load<Effect>("HeightMap/effects");
-          
+            sandTexture = content.Load<Texture2D>("HeightMap/sand-texture");
             LoadHeightData(heightMap);
             SetUpVertices();
             SetUpIndices();
@@ -74,9 +76,10 @@ namespace WickedSuffering
             Matrix worldMatrix = Matrix.CreateTranslation(-terrainWidth / 2.0f, 0, terrainHeight / 2.0f);// *Matrix.CreateRotationY(angle);
 
             //Sets the effects to be used from the fx file such as coloring the terrain and adding lighting.
-            effect.CurrentTechnique = effect.Techniques["Colored"];
+            effect.CurrentTechnique = effect.Techniques["Textured"];
             Vector3 lightDirection = new Vector3(1.0f, -1.0f, -1.0f);
             lightDirection.Normalize();
+            effect.Parameters["xTexture"].SetValue(sandTexture);
             effect.Parameters["xLightDirection"].SetValue(lightDirection);
             effect.Parameters["xAmbient"].SetValue(0.1f);
             effect.Parameters["xEnableLighting"].SetValue(true);
@@ -90,7 +93,7 @@ namespace WickedSuffering
 
                 device.Indices = myIndexBuffer;
                 device.SetVertexBuffer(myVertexBuffer);
-                device.DrawUserIndexedPrimitives(PrimitiveType.TriangleList, vertices, 0, vertices.Length, indices, 0, indices.Length / 3, VertexPositionColorNormal.VertexDeclaration);
+                device.DrawUserIndexedPrimitives(PrimitiveType.TriangleList, vertices, 0, vertices.Length, indices, 0, indices.Length / 3, VertexPositionNormalTexture.VertexDeclaration);
             }
         }
         
@@ -109,23 +112,15 @@ namespace WickedSuffering
                 }
             }
 
-            vertices = new VertexPositionColorNormal[terrainWidth * terrainHeight];
+            vertices = new VertexPositionNormalTexture[terrainWidth * terrainHeight];
             for (int x = 0; x < terrainWidth; x++)
             {
                 for (int y = 0; y < terrainHeight; y++)
                 {
                     vertices[x + y * terrainWidth].Position = new Vector3(x, heightData[x, y], -y);
 
-                    if (heightData[x, y] < minHeight + (maxHeight - minHeight) / 4)
-                        vertices[x + y * terrainWidth].Color = new Color(84, 74, 70);
-
-                    else if (heightData[x, y] < minHeight + (maxHeight - minHeight) * 2 / 4)
-                        vertices[x + y * terrainWidth].Color = new Color(84, 74, 70);
-                    //                vertices[x + y * terrainWidth].Color = Color.DimGray;
-                    else if (heightData[x, y] < minHeight + (maxHeight - minHeight) * 3 / 4)
-                        vertices[x + y * terrainWidth].Color = new Color(84, 74, 70);
-                    else
-                        vertices[x + y * terrainWidth].Color = Color.White;
+                    vertices[x + y * terrainWidth].TextureCoordinate.X = (float)x / 30.0f;
+                    vertices[x + y * terrainWidth].TextureCoordinate.Y = (float)y / 30.0f;   
                 }
             }
 
@@ -171,7 +166,7 @@ namespace WickedSuffering
 
         private void CopyToBuffers()
         {
-            myVertexBuffer = new VertexBuffer(device, VertexPositionColorNormal.VertexDeclaration, vertices.Length, BufferUsage.WriteOnly);
+            myVertexBuffer = new VertexBuffer(device, VertexPositionNormalTexture.VertexDeclaration, vertices.Length, BufferUsage.WriteOnly);
             myVertexBuffer.SetData(vertices);
             myIndexBuffer = new IndexBuffer(device, typeof(int), indices.Length, BufferUsage.WriteOnly);
             myIndexBuffer.SetData(indices);
