@@ -51,7 +51,7 @@ namespace WickedSuffering
         float down = 0.1f;
         //Effect effect;
 
-
+        List<BoundingBox> boundingBox;
 
 
         public playercam(GraphicsDevice device, Camera c, ContentManager content)
@@ -64,7 +64,7 @@ namespace WickedSuffering
         }
 
 
-        public void loadcontent(float[,] heightdata, int terrainlength, int terrainheight, List<target> targets)
+        public void loadcontent(float[,] heightdata, int terrainlength, int terrainheight, List<target> targets,List<BoundingBox> BoundingBox)
         {
             Mouse.SetPosition(device.Viewport.Width / 2, device.Viewport.Height / 2);
             this.heightdata = heightdata;
@@ -74,7 +74,7 @@ namespace WickedSuffering
             AK47 = content.Load<Model>("Models/AK/AK");
             this.targets = targets;
             soundeffect = content.Load<SoundEffect>("Models/AK/GunAK47SingleShot");
-            
+            this.boundingBox = BoundingBox;
             //effect = content.Load<Effect>("Heightmap/effects");
             //AK47.Meshes[0].MeshParts[0].Effect = effect;
 
@@ -136,8 +136,19 @@ namespace WickedSuffering
             c.View = Matrix.CreateLookAt(c.Position, c.target, cameraRotatedUpVector);
         }
 
+        //checking collision on every target
+        public bool checkCollision(BoundingSphere sphere)
+        {
+            foreach (BoundingBox bsphere in boundingBox)
+            {
 
-
+                if (bsphere.Contains(sphere) == ContainmentType.Intersects)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
 
 
@@ -148,9 +159,11 @@ namespace WickedSuffering
             Vector3 pos = c.Position;
             pos += movspeed * rotatedVector;
             
-            if (pos.X > -349 && pos.Z > -349 && pos.X < 349 && pos.Z < 349)
+            if (pos.X > -349 && pos.Z > -349 && pos.X < 349 && pos.Z < 349);
             {
-                c.Position = pos;
+                //for collision check
+                if(!checkCollision(new BoundingSphere(pos,2f)))
+                    c.Position = pos;
             }
 
              KeyboardState keyState = Keyboard.GetState();

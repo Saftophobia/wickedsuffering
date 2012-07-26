@@ -64,7 +64,7 @@ namespace WickedSuffering
 
             Heightmap.loadContent();
             TargetEngine.loadContent(Heightmap.terrainWidth, Heightmap.terrainHeight, Heightmap.heightData);
-            playercam.loadcontent(Heightmap.heightData,Heightmap.terrainWidth,Heightmap.terrainHeight,TargetEngine.targets);
+            playercam.loadcontent(Heightmap.heightData,Heightmap.terrainWidth,Heightmap.terrainHeight,TargetEngine.targets,TargetEngine.boundingBox);
             sky.LoadContent();
             
             
