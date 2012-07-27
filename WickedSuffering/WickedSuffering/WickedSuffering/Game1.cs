@@ -33,7 +33,7 @@ namespace WickedSuffering
         int frameCounter = 0;
         TimeSpan elapsedTime = TimeSpan.Zero;
         TargetEngine TargetEngine;
-
+        
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -50,7 +50,6 @@ namespace WickedSuffering
             TargetEngine = new TargetEngine(c, this.Content);
             sky = new Skydome(this.GraphicsDevice, this.Content, c.View, c.Projection, c.Position);
             crossHair = Content.Load<Texture2D>("crosshair");
-            
             base.Initialize();
         }
 

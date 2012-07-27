@@ -12,6 +12,9 @@ namespace WickedSuffering
 {
     class playercam
     {
+        Model BulletModel;
+        List<Bullet> bulletList;
+        
         SoundEffect soundeffect;
         Model AK47;
         float modelRotation = 0.0f;
@@ -25,7 +28,7 @@ namespace WickedSuffering
 
         GraphicsDevice device;
 
-        Camera c;
+        Camera Camera;
 
         MouseState OrigMouseState;
 
@@ -56,9 +59,9 @@ namespace WickedSuffering
 
         public playercam(GraphicsDevice device, Camera c, ContentManager content)
         {
-            this.c = c;
+            this.Camera = c;
             this.device = device;
-            
+            bulletList = new List<Bullet>();
             this.content = content;
 
         }
@@ -73,6 +76,7 @@ namespace WickedSuffering
             OrigMouseState = Mouse.GetState();
             AK47 = content.Load<Model>("Models/AK/AK");
             this.targets = targets;
+            BulletModel = content.Load<Model>("Models/bullet/Bullet");
             soundeffect = content.Load<SoundEffect>("Models/AK/GunAK47SingleShot");
             this.boundingBox = BoundingBox;
             //effect = content.Load<Effect>("Heightmap/effects");
@@ -90,6 +94,38 @@ namespace WickedSuffering
                 Shoot();
                 VerticalRot += 0.5f * timeDifference;
             }
+
+
+            for (int i = 0; i < bulletList.Count();i++ )
+            {
+                if (!bulletList[i].dead)
+                {
+                    bulletList[i].Update(gameTime);
+                }
+                else
+                {
+                    bulletList.Remove(bulletList[i]);
+                }
+
+            }
+                
+                  
+                
+            
+
+          
+
+
+
+            //-----------
+
+
+
+
+
+
+
+
             if (mousestate != OrigMouseState)
             {
                 float xDifference = mousestate.X - OrigMouseState.X;
@@ -128,12 +164,12 @@ namespace WickedSuffering
 
             Vector3 cameraOriginalTarget = new Vector3(0, 0, -1);
             Vector3 cameraRotatedTarget = Vector3.Transform(cameraOriginalTarget, cameraRotation);
-            c.target = c.Position + cameraRotatedTarget;
+            Camera.target = Camera.Position + cameraRotatedTarget;
             Vector3 cameraOriginalUpVector = new Vector3(0, 1, 0);
             Vector3 cameraRotatedUpVector = Vector3.Transform(cameraOriginalUpVector, cameraRotation);
 
 
-            c.View = Matrix.CreateLookAt(c.Position, c.target, cameraRotatedUpVector);
+            Camera.View = Matrix.CreateLookAt(Camera.Position, Camera.target, cameraRotatedUpVector);
         }
 
         //checking collision on every target
@@ -156,14 +192,14 @@ namespace WickedSuffering
         {
             Matrix cameraRotation = Matrix.CreateRotationX(VerticalRot) * Matrix.CreateRotationY(HorizonRot);
             Vector3 rotatedVector = Vector3.Transform(vectorToAdd, cameraRotation);
-            Vector3 pos = c.Position;
+            Vector3 pos = Camera.Position;
             pos += movspeed * rotatedVector;
             
             if (pos.X > -349 && pos.Z > -349 && pos.X < 349 && pos.Z < 349);
             {
                 //for collision check
                 if(!checkCollision(new BoundingSphere(pos,2f)))
-                    c.Position = pos;
+                    Camera.Position = pos;
             }
 
              KeyboardState keyState = Keyboard.GetState();
@@ -173,21 +209,21 @@ namespace WickedSuffering
                  if (!jump)
                  {
                      crouch = true;
-                     if (c.Position.Y > heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 12)
+                     if (Camera.Position.Y > heightdata[(terrainheight / 2) + (int)Camera.Position.X, (terrainwidth / 2) - (int)Camera.Position.Z] + 12)
                      {
-                         c.Position = new Vector3(c.Position.X, c.Position.Y - 1, c.Position.Z);
+                         Camera.Position = new Vector3(Camera.Position.X, Camera.Position.Y - 1, Camera.Position.Z);
                      }
                      else
                      {
-                         c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 10, c.Position.Z);
+                         Camera.Position = new Vector3(Camera.Position.X, heightdata[(terrainheight / 2) + (int)Camera.Position.X, (terrainwidth / 2) - (int)Camera.Position.Z] + 10, Camera.Position.Z);
                      }
                  }
              }
              else
              {
-                 if (c.Position.Y < heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 18)
+                 if (Camera.Position.Y < heightdata[(terrainheight / 2) + (int)Camera.Position.X, (terrainwidth / 2) - (int)Camera.Position.Z] + 18)
                  {
-                     c.Position = new Vector3(c.Position.X, c.Position.Y + 1, c.Position.Z);
+                     Camera.Position = new Vector3(Camera.Position.X, Camera.Position.Y + 1, Camera.Position.Z);
                  }
                  else
                  {
@@ -202,16 +238,16 @@ namespace WickedSuffering
                  if (!crouch && jumping)
                  {
                      jump = true;
-                     if ((c.Position.Y < heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 40) && up)
+                     if ((Camera.Position.Y < heightdata[(terrainheight / 2) + (int)Camera.Position.X, (terrainwidth / 2) - (int)Camera.Position.Z] + 40) && up)
                      {
-                         c.Position = new Vector3(c.Position.X, c.Position.Y + 1, c.Position.Z);
+                         Camera.Position = new Vector3(Camera.Position.X, Camera.Position.Y + 1, Camera.Position.Z);
                      }
                      else
                      {
-                         if (c.Position.Y > heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 20)
+                         if (Camera.Position.Y > heightdata[(terrainheight / 2) + (int)Camera.Position.X, (terrainwidth / 2) - (int)Camera.Position.Z] + 20)
                          {
                              up = false;
-                             c.Position = new Vector3(c.Position.X, c.Position.Y - down, c.Position.Z);
+                             Camera.Position = new Vector3(Camera.Position.X, Camera.Position.Y - down, Camera.Position.Z);
                              down += 0.1f;
                          }
 
@@ -229,7 +265,7 @@ namespace WickedSuffering
              if (!crouch && !jump)
              {
                  // Y coordinates is set to 20 above the heightdata altitude, remove this line to wander in space again.
-                 c.Position = new Vector3(c.Position.X, heightdata[(terrainheight / 2) + (int)c.Position.X, (terrainwidth / 2) - (int)c.Position.Z] + 20, c.Position.Z);
+                 Camera.Position = new Vector3(Camera.Position.X, heightdata[(terrainheight / 2) + (int)Camera.Position.X, (terrainwidth / 2) - (int)Camera.Position.Z] + 20, Camera.Position.Z);
              }
 
             UpdateViewMatrix();
@@ -253,10 +289,10 @@ namespace WickedSuffering
 
                     effect.World = Matrix.CreateScale(0.2f, 0.2f, 0.2f) * transforms[mesh.ParentBone.Index] *
                         Matrix.CreateRotationX(VerticalRot) * Matrix.CreateRotationY(HorizonRot)
-                        * Matrix.CreateTranslation(c.Position);
+                        * Matrix.CreateTranslation(Camera.Position);
                     
-                    effect.View = c.View;
-                    effect.Projection = c.Projection;
+                    effect.View = Camera.View;
+                    effect.Projection = Camera.Projection;
                 }
 
                 mesh.Draw();
@@ -265,17 +301,28 @@ namespace WickedSuffering
 
             }
 
+
+            for (int i = 0; i < bulletList.Count();i++ )
+            {
+                if (!bulletList[i].dead)
+                {
+                    bulletList[i].Draw(gametime);
+                }
+
+            }
+            
+
+            //-----------
+
+
         }
 
         public void Shoot()
         {
             SoundEffectInstance soundEffectInstance = soundeffect.CreateInstance();
-
             soundEffectInstance.IsLooped = false;
-            
-
             soundEffectInstance.Play();
-
+            /*
             Vector3 pointS = c.Position;
             Vector3 dirV = c.Position - c.target;
 
@@ -294,10 +341,10 @@ namespace WickedSuffering
                 {
                     targets[i].alive = false;
                 }
-                
-
-
             }
+             */
+            Bullet bullet = new Bullet(BulletModel,this.Camera);
+            bulletList.Add(bullet);
         }
     }
 }
