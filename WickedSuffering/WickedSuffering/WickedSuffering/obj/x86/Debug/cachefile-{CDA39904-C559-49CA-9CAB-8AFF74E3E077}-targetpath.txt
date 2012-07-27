@@ -8,6 +8,7 @@ Content\crosshair.xnb
 Content\HeightMap\sand-texture.xnb
 Content\SpriteFont1.xnb
 Content\Models\AK\AK.xnb
+Content\Models\bullet\Bullet.xnb
 Content\Models\AK\GunAK47SingleShot.xnb
 Content\SkyDome\cloudMap_0.xnb
 Content\Models\nanosuit\helmet_dif_0.xnb
@@ -17,3 +18,4 @@ Content\Models\nanosuit\body_dif_0.xnb
 Content\Models\nanosuit\arm_dif_0.xnb
 Content\Models\nanosuit\hand_dif_0.xnb
 Content\Models\nanosuit\leg_dif_0.xnb
+Content\Cracked_Plaster_Texture_01_by_go_0.xnb
