@@ -16,6 +16,8 @@ namespace WickedSuffering
         private int lifeTime;
         private int elapsedTime;
         Camera c;
+        Vector3 targetvector;
+        Vector3 positionvector;
 
 
         public Bullet(Model model,Camera C)
@@ -26,6 +28,8 @@ namespace WickedSuffering
             lifeTime = 10000;
             elapsedTime = 0;
             position = c.Position;
+            positionvector = c.Position;
+            targetvector = c.target;
         }
 
 
@@ -35,7 +39,10 @@ namespace WickedSuffering
             
             this.elapsedTime += gameTime.ElapsedGameTime.Milliseconds;
             this.dead = (this.elapsedTime >= this.lifeTime);
-
+            position.X += (targetvector.X - positionvector.X) * 0.5f;
+            position.Y += (targetvector.Y - positionvector.Y) * 0.5f;
+            position.Z += (targetvector.Z - positionvector.Z) * 0.5f;
+            
             
             
         }
