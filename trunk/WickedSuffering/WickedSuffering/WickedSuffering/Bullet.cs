@@ -57,7 +57,7 @@ namespace WickedSuffering
                     effect.EnableDefaultLighting();
                     effect.PreferPerPixelLighting = true;
                     effect.LightingEnabled = true;
-                    effect.World = Matrix.CreateScale(0.8f, 0.8f, 0.8f) * transforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(position);
+                    effect.World = Matrix.CreateScale(0.08f, 0.08f, 0.08f) * transforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(position);
                     effect.View = c.View;
                     effect.Projection = c.Projection;
                 }
