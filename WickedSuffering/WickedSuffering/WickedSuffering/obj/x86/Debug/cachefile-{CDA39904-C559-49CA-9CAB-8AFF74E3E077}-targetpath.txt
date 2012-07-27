@@ -18,4 +18,3 @@ Content\Models\nanosuit\body_dif_0.xnb
 Content\Models\nanosuit\arm_dif_0.xnb
 Content\Models\nanosuit\hand_dif_0.xnb
 Content\Models\nanosuit\leg_dif_0.xnb
-Content\Cracked_Plaster_Texture_01_by_go_0.xnb
