@@ -49,4 +49,3 @@ C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffe
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb
 C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\bullet\Bullet.xnb
-D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Cracked_Plaster_Texture_01_by_go_0.xnb
