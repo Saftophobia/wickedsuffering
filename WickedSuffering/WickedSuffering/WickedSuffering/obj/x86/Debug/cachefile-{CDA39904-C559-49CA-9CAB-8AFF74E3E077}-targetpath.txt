@@ -3,7 +3,7 @@ Content\SkyDome\Effects.xnb
 Content\SkyDome\dome.xnb
 Content\Models\nanosuit\nanosuit.xnb
 Content\SkyDome\cloudMap.xnb
-Content\HeightMap\heightmap.xnb
+Content\HeightMap\heightmap2.xnb
 Content\crosshair.xnb
 Content\HeightMap\sand-texture.xnb
 Content\SpriteFont1.xnb
@@ -18,3 +18,4 @@ Content\Models\nanosuit\body_dif_0.xnb
 Content\Models\nanosuit\arm_dif_0.xnb
 Content\Models\nanosuit\hand_dif_0.xnb
 Content\Models\nanosuit\leg_dif_0.xnb
+Content\HeightMap\heightmap.xnb

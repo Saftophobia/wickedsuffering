@@ -7,7 +7,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\effects.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\effects.xnb</Output>
       <Time>2012-07-11T13:52:18.5269344+02:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\Effects.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\Effects.xnb</Output>
       <Time>2012-07-05T13:14:02.1601185+02:00</Time>
     </Item>
     <Item>
@@ -25,13 +25,13 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\dome.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\dome.xnb</Output>
       <Time>2012-07-05T13:14:02.1561182+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\SkyDome\dome_0.xml</Key>
-        <Value>2012-07-27T17:51:20.2117327+02:00</Value>
+        <Value>2013-01-13T13:09:35.2785502+01:00</Value>
       </Dependency>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Request>
+      <Request>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Request>
     </Item>
     <Item>
       <Source>Models\nanosuit\nanosuit.X</Source>
@@ -39,19 +39,19 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb</Output>
       <Time>2012-07-12T13:38:12.938228+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\nanosuit\nanosuit_0.xml</Key>
-        <Value>2012-07-27T17:51:21.4220512+02:00</Value>
+        <Value>2013-01-13T13:09:36.3366107+01:00</Value>
       </Dependency>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Request>
-      <Request>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Request>
+      <Request>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Request>
+      <Request>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Request>
     </Item>
     <Item>
       <Source>SkyDome\cloudMap.jpg</Source>
@@ -59,17 +59,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap.xnb</Output>
       <Time>2012-07-05T13:14:02.152118+02:00</Time>
     </Item>
     <Item>
-      <Source>HeightMap\heightmap.bmp</Source>
-      <Name>HeightMap\heightmap</Name>
+      <Source>HeightMap\heightmap2.bmp</Source>
+      <Name>HeightMap\heightmap2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap.xnb</Output>
-      <Time>2012-07-25T14:25:41.7014094+02:00</Time>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap2.xnb</Output>
+      <Time>2013-01-13T13:07:54.8038033+01:00</Time>
     </Item>
     <Item>
       <Source>crosshair.png</Source>
@@ -77,7 +77,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb</Output>
       <Time>2012-07-14T17:33:12.6056297+02:00</Time>
     </Item>
     <Item>
@@ -86,7 +86,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb</Output>
       <Time>2012-07-24T14:43:50.0900021+02:00</Time>
     </Item>
     <Item>
@@ -95,7 +95,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
       <Time>2012-07-07T21:05:28.7779035+02:00</Time>
     </Item>
     <Item>
@@ -104,11 +104,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\AK.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\AK.xnb</Output>
       <Time>2012-07-08T16:57:44.5445102+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\AK\AK_0.xml</Key>
-        <Value>2012-07-27T17:51:27.9953242+02:00</Value>
+        <Value>2013-01-13T13:09:42.8849852+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -117,11 +117,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\bullet\Bullet.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\bullet\Bullet.xnb</Output>
       <Time>2012-07-27T18:11:21.7297595+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\bullet\Bullet_0.xml</Key>
-        <Value>2012-07-27T18:11:42.8499581+02:00</Value>
+        <Value>2013-01-13T13:09:43.1289992+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -130,7 +130,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\GunAK47SingleShot.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\GunAK47SingleShot.xnb</Output>
       <Time>2012-07-14T18:30:06.1683367+02:00</Time>
     </Item>
     <Item>
@@ -153,7 +153,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb</Output>
       <Time>2012-07-05T13:14:02.152118+02:00</Time>
     </Item>
     <Item>
@@ -176,7 +176,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb</Output>
       <Time>2012-07-12T12:50:26.15148+02:00</Time>
     </Item>
     <Item>
@@ -192,7 +192,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb</Output>
       <Time>2012-07-12T12:50:26.1524801+02:00</Time>
     </Item>
     <Item>
@@ -208,7 +208,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb</Output>
       <Time>2012-07-12T13:38:12.9232272+02:00</Time>
     </Item>
     <Item>
@@ -224,7 +224,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb</Output>
       <Time>2012-07-12T12:50:26.1724812+02:00</Time>
     </Item>
     <Item>
@@ -240,7 +240,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb</Output>
       <Time>2012-07-12T12:50:26.3214897+02:00</Time>
     </Item>
     <Item>
@@ -256,7 +256,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb</Output>
       <Time>2012-07-12T12:50:26.3564917+02:00</Time>
     </Item>
     <Item>
@@ -272,7 +272,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Output>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb</Output>
       <Time>2012-07-12T12:50:26.3744928+02:00</Time>
     </Item>
     <Item>
@@ -289,16 +289,25 @@
       <Output>obj\x86\Debug\Models\bullet\Bullet_0.xml</Output>
       <Time>2012-07-27T18:11:21.7297595+02:00</Time>
     </Item>
+    <Item>
+      <Source>HeightMap\heightmap.bmp</Source>
+      <Name>HeightMap\heightmap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap.xnb</Output>
+      <Time>2012-08-01T14:11:20.2038578+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSufferingContent\</RootDirectory>
-      <LoggerRootDirectory>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSufferingContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSufferingContent\</RootDirectory>
+      <LoggerRootDirectory>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSufferingContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
