@@ -65,17 +65,21 @@ namespace WickedSuffering
         private void generatePositions(){
             Random random = new Random();
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; targets.Capacity < 20; i++)
             {
                 int x = random.Next((-terrainWidth / 2) + 20, (terrainWidth / 2) -20);
                 int z = random.Next((-terrainHeight / 2) + 20, (terrainHeight / 2) -20);
-                Vector3 pos = new Vector3(x, heightdata[(terrainHeight / 2) + x, (terrainWidth / 2) - z], z);
-                
-                targets.Add(new target(this.c,this.content,"bot" + i, pos));
 
-                //adding collisionbox to 
-                boundingBox.Add(UpdateBoundingBox(targetmodel,Matrix.CreateTranslation(pos)));
+                if (heightdata[(terrainHeight / 2) + x, (terrainWidth / 2) - z] < 10)
+                {
 
+                    Vector3 pos = new Vector3(x, heightdata[(terrainHeight / 2) + x, (terrainWidth / 2) - z], z);
+
+                    targets.Add(new target(this.c, this.content, "bot" + i, pos));
+
+                    //adding collisionbox to 
+                    boundingBox.Add(UpdateBoundingBox(targetmodel, Matrix.CreateTranslation(pos)));
+                }
 
             }
         }

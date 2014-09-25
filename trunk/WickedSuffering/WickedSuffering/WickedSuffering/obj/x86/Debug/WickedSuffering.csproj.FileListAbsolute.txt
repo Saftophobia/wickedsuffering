@@ -49,3 +49,30 @@ C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffe
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb
 C:\Users\AMS\Desktop\wickedsuffering\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb
 D:\WickedSuffering\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\bullet\Bullet.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\effects.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\Effects.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\dome.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\nanosuit.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap2.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\crosshair.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\sand-texture.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SpriteFont1.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\AK.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\bullet\Bullet.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\AK\GunAK47SingleShot.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\SkyDome\cloudMap_0.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\helmet_dif_0.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_dif_0.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\glass_di_0.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\body_dif_0.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\arm_dif_0.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\hand_dif_0.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\Models\nanosuit\leg_dif_0.xnb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\WickedSuffering.exe
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\WickedSuffering.pdb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\obj\x86\Debug\WickedSuffering.exe
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\obj\x86\Debug\WickedSuffering.pdb
+D:\WickedSuffering - Copy - Copy - Copy\trunk\WickedSuffering\WickedSuffering\WickedSuffering\bin\x86\Debug\Content\HeightMap\heightmap.xnb

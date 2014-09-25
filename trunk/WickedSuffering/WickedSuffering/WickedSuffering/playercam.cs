@@ -109,7 +109,7 @@ namespace WickedSuffering
 
             }
                 
-                  
+                 
                 
             
 
@@ -154,6 +154,9 @@ namespace WickedSuffering
                 moveVector += new Vector3(0, 2, 0);
             if (keyState.IsKeyDown(Keys.Z))
                 moveVector += new Vector3(0, -2, 0);
+
+
+          
             
             AddToCameraPosition(moveVector * timeDifference);
         }
@@ -265,7 +268,7 @@ namespace WickedSuffering
              if (!crouch && !jump)
              {
                  // Y coordinates is set to 20 above the heightdata altitude, remove this line to wander in space again.
-                 Camera.Position = new Vector3(Camera.Position.X, heightdata[(terrainheight / 2) + (int)Camera.Position.X, (terrainwidth / 2) - (int)Camera.Position.Z] + 20, Camera.Position.Z);
+                 //Camera.Position = new Vector3(Camera.Position.X, heightdata[(terrainheight / 2) + (int)Camera.Position.X, (terrainwidth / 2) - (int)Camera.Position.Z] + 20, Camera.Position.Z);
              }
 
             UpdateViewMatrix();
@@ -285,7 +288,9 @@ namespace WickedSuffering
                 foreach (BasicEffect effect in mesh.Effects)
                 {
                     effect.EnableDefaultLighting();
-                    
+               
+
+
 
                     effect.World = Matrix.CreateScale(0.2f, 0.2f, 0.2f) * transforms[mesh.ParentBone.Index] *
                         Matrix.CreateRotationX(VerticalRot) * Matrix.CreateRotationY(HorizonRot)
