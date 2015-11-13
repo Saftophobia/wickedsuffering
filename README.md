@@ -16,6 +16,10 @@ Wicked Suffering is a First Person Shooter game implemented in C#, Microsoft XNA
 ##### Why?
 * Exploiting the power of MS XNA
 
+##### How to play
+* Clone
+* Run /WickedSuffering/bin/x86/Debug/WickedSuffering.exe
+
 ##### Notes:
 * Automatically exported from code.google.com/p/wickedsuffering
 
